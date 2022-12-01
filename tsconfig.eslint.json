@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "./**/*.ts"
+  ],
+  "compilerOptions": {
+    "types": [
+      "jest"
+    ]
+  },
+  "exclude": [
+    "package.json",
+    "lib",
+    "node_modules",
+    "docker",
+    "config",    
+    "test",
+    "populate",
+    "coverage",
+  ]
+}

@@ -1,0 +1,9 @@
+node_modules/
+lib/
+test/
+yarn*.*
+package-*.*
+Makefile
+Dockerfile
+README.MD
+docker-*.*

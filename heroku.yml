@@ -1,0 +1,11 @@
+build:
+  docker:
+    web: Dockerfile
+  config:
+    NODE_ENV: production
+    MONGODB_USERNAME: productListUser
+    MONGODB_PASSWORD: productListPassword
+    MONGODB_AUTH_DATABASE_NAME: admin
+    MONGODB_DATABASE_NAME: promotions
+    MONGODB_HOST: localhost
+    MONGODB_PORT: 27017
