@@ -1,10 +1,29 @@
-deploy on heroku
+## Desafio walmart backend
 
-heroku stack:set container -a desafio-backend-crod
-heroku container:push web -a desafio-backend-crod
-heroku container:release web -a desafio-backend-crod
+### Installation
 
-deploy on dev
+```
+make database-up
+make populate-db
+npm i
+```
 
-make database-up && make populate-db
-npm i && npm run dev
+### Test
+
+```
+npm run test
+```
+
+### Run develop
+
+```
+npm run dev
+```
+### Deploy heroku
+
+```
+heroku stack:set container -a NOMBRE_PROYECTO
+heroku container:push web -a NOMBRE_PROYECTO
+heroku container:release web -a NOMBRE_PROYECTO
+```
+
