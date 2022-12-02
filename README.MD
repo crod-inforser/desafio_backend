@@ -19,6 +19,12 @@ npm run test
 ```
 npm run dev
 ```
+
+### Run build
+
+```
+npm run build
+```
 ### Deploy heroku
 
 ```
