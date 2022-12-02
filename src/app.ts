@@ -1,10 +1,9 @@
 import config from 'config';
-import createApp from './server';
-import connectDB from './database';
+import morgan from 'morgan';
 
-connectDB();
+import app from './server';
 
-const app = createApp();
+if (config.get('NODE_ENV') === 'development') { app.use(morgan('dev')); }
 
 app.listen(config.get('PORT'));
 console.log(`listening on port ${config.get('PORT')}`);

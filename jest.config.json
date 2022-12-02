@@ -1,34 +1,26 @@
 {
-    "testEnvironment": "node",
-    "coverageThreshold": {
-      "global": {
-        "statements": 0,
-        "branches": 0,
-        "functions": 0,
-        "lines": 0
-      }
-    },
-    "testPathIgnorePatterns": [
-      "/node_modules/"
-    ],
-    "collectCoverageFrom": [
-      "src/controllers/*.ts",
-      "src/zod/*.ts"
-    ],
-    "coveragePathIgnorePatterns": [
-      "/test/",
-      "/node_modules/",
-      "/src/app.ts"
-    ],
-    "testRegex": "test/unit/.*\\.test\\.(js|ts)$",
-    "moduleFileExtensions": [
-      "ts",
-      "js",
-      "json"
-    ],
-    "collectCoverage": true,
-    "reporters": [
-      "default"
-    ],
-    "preset": "ts-jest"
-  }
+  "testEnvironment": "node",
+  "testPathIgnorePatterns": [
+    "/node_modules/"
+  ],
+  "collectCoverageFrom": [
+    "src/controllers/*.ts",
+    "src/zod/*.ts"
+  ],
+  "coveragePathIgnorePatterns": [
+    "/test/",
+    "/node_modules/",
+    "/src/app.ts"
+  ],
+  "testRegex": "test/unit/.*\\.test\\.(js|ts)$",
+  "moduleFileExtensions": [
+    "ts",
+    "js",
+    "json"
+  ],
+  "collectCoverage": true,
+  "reporters": [
+    "default"
+  ],
+  "preset": "ts-jest"
+}

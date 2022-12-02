@@ -1,21 +1,17 @@
 import express from 'express';
 import cors from 'cors';
-import morgan from 'morgan';
-import c from 'config';
-
 import routes from '../routes';
+import connectDB from '../database';
 
-export default function createApp(): express.Application {
-  const app = express();
+const app = express();
 
-  app.use(cors());
+connectDB();
 
-  if (c.get('NODE_ENV') === 'development') { app.use(morgan('dev')); }
+app.use(cors());
 
-  app.use(express.json());
-  app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-  app.use(routes);
+app.use(routes);
 
-  return app;
-}
+export default app;
